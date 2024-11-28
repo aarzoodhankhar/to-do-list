@@ -1,0 +1,195 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fa; /* Soft, neutral background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height on smaller screens */
+    color: #333;
+    gap: 65px;
+  }
+  
+  /* Profile Container */
+  #profile-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #profile-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Header */
+  h1 {
+    color: #ff7f7f; /* Vibrant green for positivity */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Adds emphasis */
+  }
+  
+  h1 span {
+    color: #1a202c;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin: 10px 0 30px;
+    font-weight: 400;
+    line-height: 1.6; /* Improves readability */
+  }
+  
+  /* Form Section */
+  #name-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  #nameInput {
+    padding: 12px 18px;
+    font-size: 1rem;
+    border: 2px solid #ff7f7f;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 260px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #nameInput:focus {
+    border-color: #2c7a7b;
+    box-shadow: 0 0 8px rgba(44, 122, 123, 0.4);
+  }
+  
+  #saveNameButton {
+    background-color: #ff7f7f;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #saveNameButton:hover {
+    background-color: #ff7f7f;
+    transform: scale(1.05);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #ff7f7f;
+    color: white;
+    padding: 16px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #ff7f7f;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #ff7f7f;
+  }
+  
+  /* Specific Button Styles */
+  #logoutButton, #deleteAccountButton {
+    background-color: #e53e3e;
+  }
+  
+  #logoutButton:hover, #deleteAccountButton:hover {
+    background-color: #c53030;
+  }
+  
+  #goBackButton, #goHomeButton {
+    background-color: #3182ce;
+  }
+  
+  #goBackButton:hover, #goHomeButton:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Chart Section */
+  #pendingTasksChart {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 550px;
+    height: 320px;
+    border-radius: 12px;
+    background-color: #e2e8f0;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #pendingTasksChart:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Loading and No User State */
+  #loadingState {
+    font-size: 1.6rem;
+    color: #ff7f7f;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #profile-container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 0.95rem;
+      padding: 14px 22px;
+    }
+  
+    #nameInput {
+      width: 100%;
+      max-width: 200px;
+      font-size: 0.95rem;
+    }
+  
+    #pendingTasksChart {
+      height: 280px; /* Adjust chart height for smaller screens */
+    }
+  }
+  
+  /* Accessibility Improvements */
+  button:focus, #saveNameButton:focus, #nameInput:focus {
+    outline: 2px solid #ff7f7f;
+    outline-offset: 2px; /* Enhances focus visibility for accessibility */
+  }
+  

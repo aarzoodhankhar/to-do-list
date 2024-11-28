@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Task Form -->
+    <div class="navbar">
+        <div class="logo">
+            <h2>Task Manager</h2>
+        </div>
+        <div class="nav-links">
+            <a href="profile.html" id="profile-link">Profile</a>
+            <div class="settings-dropdown">
+                <button class="settings-btn">Settings</button>
+                <div class="dropdown-content">
+                    <a href="#" id="logout-link">Logout</a>
+                    <a href="#" id="delete-account-link">Delete Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="task-form">
+        <h2>Add a New Task</h2>
+        <input type="text" id="task-name" placeholder="Task Name" />
+        <input type="text" id="task-desc" placeholder="Task Description" />
+        <input type="date" id="task-date" />
+        <input type="time" id="task-time" />
+        <select id="task-priority">
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Priority</option>
+        </select>
+        <button id="add-task">Add Task</button>
+    </div>
+
+    <!-- High Priority Tasks -->
+    <div class="task-high-priority">
+        <h2 class="section-title high-priority-title">High Priority Tasks</h2>
+        <!-- High-priority tasks will be dynamically added here -->
+    </div>
+
+    <!-- Other Priority Tasks -->
+    <div class="task-other-priority">
+        <h2 class="section-title">Other Tasks</h2>
+        <!-- Other tasks will be dynamically added here -->
+    </div>
+</div>
+
+<script type="module" src="../js/task.js"></script>
+<script type="module"  src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script type="module"  src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
+</body>
+</html>

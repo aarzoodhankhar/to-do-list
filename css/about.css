@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7f7f;
+    padding: 10px 20px;
+}
+
+.navbar .logo h2 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links a, .navbar .nav-links button {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #ff5c5c;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover, .navbar .nav-links button:hover {
+    background-color: #e24a4a;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.features-section h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.features-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-section li {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a {
+    color: #ff5c5c;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo h2 {
+        font-size: 22px;
+    }
+
+    .navbar .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links a,
+    .navbar .nav-links button {
+        margin: 10px 0;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-section p {
+        width: 90%;
+    }
+
+    .features-section {
+        padding: 30px 20px;
+    }
+
+    .features-section h3 {
+        font-size: 24px;
+    }
+
+    .features-section li {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Task Manager</h2>
+            </div>
+            <div class="nav-links">
+                <a href="homepg.html">Home</a> <!-- Link to Home -->
+                <a href="faq.html">FAQ</a> <!-- Link to FAQ -->
+                <a href="about.html">About</a> <!-- Link to About -->
+                <button id="login" class="login-btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What is Task Manager?</h3>
+                    <p>Task Manager helps you organize and manage your tasks efficiently, allowing you to stay on top of your deadlines and projects.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I get started?</h3>
+                    <p>To get started, simply sign up for an account, log in, and start adding tasks that you need to manage and track.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I access my tasks on mobile?</h3>
+                    <p>Yes, Task Manager is designed to work across all devices, so you can access your tasks on both desktop and mobile devices.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is Task Manager free to use?</h3>
+                    <p>Yes, Task Manager is free to use for basic task management. We offer premium features for additional functionality.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Task Manager. All rights reserved.</p>
+            <p>Follow us: 
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("login").addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

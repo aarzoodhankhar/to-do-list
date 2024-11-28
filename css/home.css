@@ -1,0 +1,227 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7f7f; /* Light red background */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures it's on top of other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Logo */
+.navbar .logo h2 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links a, .navbar .settings-btn {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff5c5c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effects for navbar items */
+.navbar .nav-links a:hover, .navbar .settings-btn:hover {
+    background-color: #e24a4a;
+}
+
+/* Settings Dropdown */
+.settings-dropdown {
+    position: relative;
+}
+
+/* Hide dropdown by default */
+.settings-dropdown .dropdown-content {
+    opacity: 0; /* Start with invisible dropdown */
+    visibility: hidden; /* Ensure it's not clickable when invisible */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 100;
+    right: 0;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Smooth opacity transition */
+}
+
+/* Show the dropdown when hovering over the settings button or dropdown content */
+.settings-dropdown:hover .dropdown-content,
+.settings-dropdown .dropdown-content:hover {
+    opacity: 1; /* Make it visible */
+    visibility: visible; /* Make it interactive */
+    transition: opacity 0.3s ease, visibility 0s linear 0s; /* Immediate visibility */
+}
+
+/* Styling for dropdown links */
+.settings-dropdown .dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Hover effect for dropdown links */
+.settings-dropdown .dropdown-content a:hover {
+    background-color: #ff5c5c;
+    color: #fff;
+}
+
+/* Task Form Styling */
+.container {
+    margin-top: 100px; /* Adjust to avoid navbar overlap */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Task Form */
+.task-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px; /* Limiting the width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.task-form input, .task-form select, .task-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.task-form button {
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+    background-color: #e24a4a;
+}
+
+/* Task Section Styling */
+.task-high-priority, .task-other-priority {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Task Item Styling */
+.task-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.task-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.task-item button {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+    background-color: #e24a4a;
+}
+
+/* Grid Layout for Task Sections */
+.priority-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Responsiveness for Mobile */
+@media (max-width: 768px) {
+    .priority-sections {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .task-form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}

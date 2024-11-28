@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="../css/homepg.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Task Manager</h2>
+            </div>
+            <div class="nav-links">
+                <a href="homepg.html">Home</a> <!-- Home page link -->
+                <a href="faq.html">FAQ</a> <!-- FAQ page link -->
+                <a href="about.html">About</a> <!-- About page link -->
+                <button id="login" class="login-btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Task Manager</h1>
+                <p>Stay productive and organized with ease. Manage your tasks like a pro.</p>
+                <button id="get-started-btn">Get Started</button>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2>Why Choose Us?</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <img src = "../image/image1.webp" alt="Effortless Task Management" class="feature-img">
+                    <h3>Effortless Task Management</h3>
+                    <p>Add, edit, and track your tasks with a user-friendly interface.</p>
+                </div>
+                <div class="feature">
+                    <img src="../image/images.jpg" alt="Stay Organized" class="feature-img">
+                    <h3>Stay Organized</h3>
+                    <p>Prioritize your tasks and never miss a deadline.</p>
+                </div>
+                <div class="feature">
+                    <img src="../image/images (1).jpg" alt="Accessible Anywhere" class="feature-img">
+                    <h3>Accessible Anywhere</h3>
+                    <p>Manage your tasks anytime, anywhere on any device.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Task Manager. All rights reserved.</p>
+            <p>Follow us: 
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("login").addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+        document.getElementById("get-started-btn").addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
